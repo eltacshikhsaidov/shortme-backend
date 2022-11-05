@@ -22,7 +22,7 @@ import java.util.NoSuchElementException;
 @Log4j2
 public class UrlServiceImpl implements UrlService {
 
-    private static final String HOST_ADDRESS = "http://localhost:8080/";
+    private static final String HOST_ADDRESS = "https://short-me-api.herokuapp.com/";
 
     private final UrlUtil urlUtil;
 
