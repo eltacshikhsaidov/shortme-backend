@@ -13,7 +13,8 @@ Used
 
 # endpoints
 
-- api url -> https://shortme-api.herokuapp.com/api/shortUrl
+- api url -> https://shortme-api.herokuapp.com/
 
 - ```api/shortUrl``` method=POST
+- - request ```{"originalUrl": "your url goes here"}```
 - ```/{shortUrl}``` method=GET
