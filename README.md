@@ -10,3 +10,8 @@ Used
 - Spring Boot as backend
 - Material UI for frontend
 - React library
+
+# endpoints
+
+- ```api/shortUrl``` method=POST
+- ```/{shortUrl}``` method=GET
