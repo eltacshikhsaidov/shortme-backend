@@ -11,6 +11,9 @@ Used
 - Material UI for frontend
 - React library
 
+# Note
+- every url will be expired after 4 hours from created time
+
 # endpoints
 
 - api url -> https://shortme-api.herokuapp.com/
