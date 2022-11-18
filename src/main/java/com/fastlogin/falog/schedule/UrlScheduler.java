@@ -23,7 +23,7 @@ public class UrlScheduler {
     }
 
     @Async
-    @Scheduled(fixedRate = 4 * 60 * 1000)
+    @Scheduled(fixedRate = 4 * 60 * 60 * 1000)
     public void removeUrl() {
         log.info("removeUrl schedule started");
         List<Url> urlList = (List<Url>) urlRepository.findAll();
