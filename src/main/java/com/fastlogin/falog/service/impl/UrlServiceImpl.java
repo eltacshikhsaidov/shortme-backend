@@ -22,7 +22,7 @@ import java.util.NoSuchElementException;
 @Log4j2
 public class UrlServiceImpl implements UrlService {
 
-    private static final String HOST_ADDRESS = "http://134.122.123.18:8080";
+    private static final String HOST_ADDRESS = "http://134.122.123.18:8080/";
 
     private final UrlUtil urlUtil;
 
