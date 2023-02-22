@@ -1,9 +1,12 @@
 package com.fastlogin.falog.response;
 
-import lombok.Data;
+import lombok.*;
 
-@Data
-public class Response {
-    private String shortUrl;
-    private RespStatus status;
+@Getter
+@AllArgsConstructor
+public enum Response {
+    SUCCESS(1, "success"), ERROR(2, "error");
+
+    private final Integer code;
+    private final String message;
 }

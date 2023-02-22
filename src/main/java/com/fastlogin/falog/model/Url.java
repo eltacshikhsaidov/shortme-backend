@@ -19,6 +19,8 @@ public class Url {
     private String shortUrl;
     private Date date = new Date();
 
+    private Integer clickCount = 0;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
