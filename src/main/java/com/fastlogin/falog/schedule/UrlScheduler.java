@@ -34,7 +34,7 @@ public class UrlScheduler {
 
         urlList.forEach(
                 url -> {
-                    if (url.getDate().getTime() + 4 * 60 * 1000 < new Date().getTime()) {
+                    if (url.getDate().getTime() < new Date().getTime()) {
                         log.info(
                                 String.format("Removing url with short url -> %s", url.getShortUrl())
                         );
