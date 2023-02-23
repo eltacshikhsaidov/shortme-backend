@@ -14,10 +14,10 @@ public class UrlUtil {
     private static final String CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     private static final String URL_REGEX =
             "((http|https)://)(www.)?"
-                    + "[a-zA-Z0-9@:%._\\+~#?&//=]"
+                    + "[a-zA-Z0-9@:%._+~#?&/=]"
                     + "{2,256}\\.[a-z]"
                     + "{2,6}\\b([-a-zA-Z0-9@:%"
-                    + "._\\+~#?&//=]*)";
+                    + "._+~#?&/=]*)";
 
     public String generateUniqueString(int length) {
         Random random = new Random();

@@ -21,14 +21,6 @@ public class Result<T> {
         );
     }
 
-    public static <T> Result<T> success(String msg, T data) {
-        return new Result<>(
-                Response.SUCCESS.getCode(),
-                msg,
-                data
-        );
-    }
-
     @JsonInclude(JsonInclude.Include.NON_NULL)
     public static Result<?> failed(Integer code, String msg) {
         return new Result<>(
@@ -36,9 +28,5 @@ public class Result<T> {
                 msg,
                 null
         );
-    }
-
-    public static <T> Result<T> response(Integer code, String message, T data) {
-        return new Result<>(code, message, data);
     }
 }

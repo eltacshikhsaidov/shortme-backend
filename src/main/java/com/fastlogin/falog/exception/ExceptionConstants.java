@@ -5,4 +5,5 @@ public class ExceptionConstants {
     public static final Integer URL_NOT_VALID = 402;
     public static final Integer URL_CAN_NOT_BE_NULL = 403;
     public static final Integer INTERNAL_SERVER_ERROR = 404;
+    public static final Integer REQUEST_CAN_NOT_BE_NULL = 405;
 }

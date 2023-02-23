@@ -22,8 +22,14 @@ public class GeneralExceptionHandler {
     }
 
     @ExceptionHandler({IOException.class})
-    public Result<?> handleNoSuchElementException(IOException e) {
+    public Result<?> handleIOException(IOException e) {
         log.warn("exception message: {}", e.getMessage());
         return failed(INTERNAL_SERVER_ERROR, "Could not redirect to the original url, " + e.getMessage());
+    }
+
+    @ExceptionHandler({UrlIsNullException.class})
+    public Result<?> handleUrlIsNullException(UrlIsNullException e) {
+        log.warn("exception message: {}", e.getMessage());
+        return failed(URL_CAN_NOT_BE_NULL, "Url is null, " + e.getMessage());
     }
 }
